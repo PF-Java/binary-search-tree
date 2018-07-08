@@ -6,4 +6,6 @@ public interface Tree<E> {
     public void inorder();
 
     public int getSize();
+
+    public boolean search(E e);
 }
