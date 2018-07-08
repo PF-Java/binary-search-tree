@@ -1,6 +1,7 @@
 package TestBinarySearchTree;
 
 import BinarySearchTree.BST;
+import org.omg.CORBA.AnyHolder;
 
 public class TestBST {
     public static void main(String[] args) {
@@ -17,5 +18,12 @@ public class TestBST {
         System.out.println("Inorder (sorted): ");
         tree.inorder();
         System.out.println("The number of nodes is: " + tree.getSize());
+
+        System.out.println(tree.search("Minh"));
+        System.out.println(tree.search("Anh"));
+        System.out.println(tree.search("Hà"));
+        System.out.println(tree.search("Kiên"));
+        System.out.println( tree.insert("Giang"));
+
     }
 }
