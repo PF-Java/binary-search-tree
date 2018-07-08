@@ -29,5 +29,7 @@ public class TestBST {
         System.out.println("Is number 8 has tree? \n" + tree.search(8));
 
         tree.postorder();
+
+        tree.preorder();
     }
 }
