@@ -6,24 +6,28 @@ import org.omg.CORBA.AnyHolder;
 public class TestBST {
     public static void main(String[] args) {
 
-        BST<String> tree = new BST<>();
-        tree.insert("Anh");
-        tree.insert("Bình");
-        tree.insert("Cường");
-        tree.insert("Dung");
-        tree.insert("Giang");
-        tree.insert("Hà");
-        tree.insert("Kiên");
+        BST<Integer> tree = new BST<>();
+        tree.insert(4);
+        tree.insert(2);
+        tree.insert(5);
+        tree.insert(1);
+        tree.insert(3);
+        tree.insert(6);
+        tree.insert(8);
+        tree.insert(7);
+        tree.insert(9);
 
-        System.out.println("Inorder (sorted): ");
+        System.out.print("Inorder (sorted)");
         tree.inorder();
-        System.out.println("The number of nodes is: " + tree.getSize());
 
-        System.out.println(tree.search("Minh"));
-        System.out.println(tree.search("Anh"));
-        System.out.println(tree.search("Hà"));
-        System.out.println(tree.search("Kiên"));
-        System.out.println( tree.insert("Giang"));
+        System.out.println("The number of the nodes is: " + tree.getSize());
 
+        System.out.println("Is number 1 has tree? \n" + tree.search(1));
+        System.out.println("Is number 5 has tree? \n" + tree.search(5));
+        System.out.println("Is number 7 has tree? \n" + tree.search(7));
+        System.out.println("Is number 4 has tree? \n" + tree.search(4));
+        System.out.println("Is number 8 has tree? \n" + tree.search(8));
+
+        tree.postorder();
     }
 }
