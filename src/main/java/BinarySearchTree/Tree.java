@@ -8,4 +8,6 @@ public interface Tree<E> {
     public int getSize();
 
     public boolean search(E e);
+
+    public void postorder();
 }
