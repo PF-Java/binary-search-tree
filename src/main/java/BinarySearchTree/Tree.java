@@ -10,4 +10,6 @@ public interface Tree<E> {
     public boolean search(E e);
 
     public void postorder();
+
+    public void preorder();
 }
